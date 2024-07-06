@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./jon-tyson-GpiqJ8Po2g0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.calculator{
+    height:650px;
+    width:450px;
+    background-color: rgb(36, 36, 36);
+    overflow: hidden;
+    border-radius: 15px;
+    
+   
+
+}
+.keys{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+
+.buttons{
+    height: 100px;
+    width:100px;
+    border-radius: 100px;
+    background-color: rgb(216, 149, 16);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+#display
+{
+    width:100%;
+    height:90px;
+    font-size: 4rem;
+    text-align: left;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+    padding-left: 10px;
+  
+
+}
+.buttons:hover{
+    background-color: rgb(150, 100, 0);
+}
+@media screen and (max-width:600px){
+    .calculator{
+        height:95%;
+        width:90%;
+        background-color: rgb(36, 36, 36);
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .buttons{
+        height: 73px;
+        width:73px;
+        border-radius: 100%;
+        background-color: rgb(216, 149, 16);
+        color: white;
+        border: none;
+        font-size: 1rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor: pointer;
+        margin-left:2px;
+        margin-right: 2px;
+    }
+    .keys{
+        width:95%;
+        height: 100%;
+        display:grid;
+        grid-template-columns: repeat(4.9, 1fr);
+        gap: 2px;
+    }
+    #display
+{
+    width:100%;
+    height:30px;
+    font-size: 1.5rem;
+    text-align: left;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+    padding-left: 10px;
+    padding-top: 4px;
+  
+
+}
+.buttons:hover{
+    background-color: rgb(150, 100, 0);
+}
+
+}
